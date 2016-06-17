@@ -8,13 +8,15 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesResources;
 
-class Controller extends BaseController
-{
-    use AuthorizesRequests, AuthorizesResources, DispatchesJobs, ValidatesRequests;
+class Controller extends BaseController {
 
+    use AuthorizesRequests,
+        AuthorizesResources,
+        DispatchesJobs,
+        ValidatesRequests;
 
-    public function contact(){
-    	return view("pages.contact");
+    public function contact() {
+        return view("pages.contact");
     }
-}
 
+}
